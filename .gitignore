@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Lambda function zip file
+*.zip
+
+# Terraform
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate.backup
+terraform/terraform.tfstate
+terraform/.terraform/
