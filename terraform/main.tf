@@ -13,6 +13,12 @@ terraform {
       version = "~> 2.2.0"
     }
   }
+  
+  backend "s3" {
+    bucket = "circle-ci-backend-20211215220754568300000001"
+    key    = "terraform/webapp/terraform.tfstate"
+    region = "eu-west-2"
+  }
 
   required_version = "~> 1.0"
 }
